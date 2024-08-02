@@ -18,8 +18,6 @@ package full_talleres;
 public class Taller1 {
     
     public static void main(String[] args) {
-
-
     }
 
     /* 
@@ -212,8 +210,8 @@ public class Taller1 {
    
  public static double Calcular_peso_luna(byte peso_tierra_kilos) {
         try {
-            double gravedad_tierra = 9.81;
-            double factor_peso_luna = 0.16500000000000002;
+            final float gravedad_tierra =(float) 9.81;
+            final float factor_peso_luna =(float) 0.165;
 
             double peso_tierra_new = peso_tierra_kilos * gravedad_tierra;
             double peso_luna_new = peso_tierra_new * factor_peso_luna;
